@@ -37,6 +37,8 @@ hr{
     border-bottom:5px solid black;
     position: relative;
     margin: auto;
+    display: none
+    ;
 }
 .hangman-sketch .stand:before{
     content: "";
@@ -45,6 +47,7 @@ hr{
     width: 5px;
     height: 100%;
     left:34px;
+    display: none;
 
 }
 .hangman-sketch .hang:before{
@@ -54,7 +57,7 @@ hr{
     background-color: black;
     width: 100px;
     left: 35px;
-    
+    display: none;
 }
 
 .hangman-sketch .hang:after{
@@ -65,7 +68,7 @@ hr{
     width:45px;
     left: 102px;
     top: 0px;
-    
+    display: none;
 }
 .hangman-sketch .rope{
     border-style: dashed ;
@@ -76,6 +79,7 @@ hr{
     height: 50px;
     top: 30px;
     left: 91px;
+    display: none;
 }
 .hangman-sketch .man .head{
     border-radius: 50%;
@@ -85,7 +89,7 @@ hr{
     left: 105px;
     height: 35px;
     top:38px;
-
+    display: none;
 }
 .hangman-sketch .man .neck{
     position: absolute;
@@ -94,7 +98,7 @@ hr{
     left: 121px;
     height: 40px;
     top:70px;
-
+    display: none;
 }
 .hangman-sketch .man .body{
     position: absolute;
@@ -103,7 +107,7 @@ hr{
     left: 108px;
     height: 85px;
     top:91px;
-
+    display: none;
 }
 
 .hangman-sketch .man .hands:before  {
@@ -115,7 +119,7 @@ hr{
     height: 70px;
     top:99px;
     transform: rotate(36deg);
-
+    display: none;
 }
 
 .hangman-sketch .man .hands:after  {
@@ -127,7 +131,7 @@ hr{
     height: 70px;
     top:99px;
     transform: rotate(-36deg);
-
+    display: none;
 }
 
 .hangman-sketch .man .legs:before  {
@@ -138,7 +142,7 @@ hr{
     left: 112px;
     height: 77px;
     top:175px;
-    
+    display: none;
 
 }
 
@@ -150,7 +154,7 @@ hr{
     left: 132px;
     height: 77px;
     top:175px;
-
+    display: none;
 }
 .letters{
     flex: 1;

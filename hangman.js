@@ -35,6 +35,8 @@ input_letters.forEach(letter=>{
 
 });
 let choosespan=document.querySelectorAll(".letter-input span")
+let wrong_attempts=0;
+let Sketch=document.querySelector(".hangman-sketch")
 
 
 document.addEventListener("click",(e) => {
@@ -58,5 +60,10 @@ input_letters.forEach((storedletter,index) => {
  }
 
 })
+if(thestatus!=true){
+    wrong_attempts++;
+    Sketch.classList.add(`wrong-${wrong_attempts}`);
+}
+
     }
 })
