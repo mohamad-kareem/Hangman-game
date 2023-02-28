@@ -60,7 +60,7 @@ input_letters.forEach((storedletter,index) => {
  }
 
 })
-if(thestatus!=true){
+if(thestatus!==true){
     wrong_attempts++;
     Sketch.classList.add(`wrong-${wrong_attempts}`);
 }
