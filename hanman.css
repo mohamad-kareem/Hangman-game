@@ -156,6 +156,7 @@ hr{
     flex: 1;
     text-align: center;
     padding: 65px;
+    cursor:pointer ;
 
 }
 .letters .letter_box{
@@ -171,4 +172,28 @@ font-weight: bold;
 margin-right: 10px;
 margin-bottom: 10px;
 padding: 10px;
+}
+.letters .letter_box.clicked{
+    background-color: blue;
+    pointer-events: none;
+
+}
+
+
+.letter-input{
+    margin: 10px;
+    background-color: rgb(215, 147, 124);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    min-height: 100px;
+}
+.letter-input span{
+    width: 60px;
+    height: 60px;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-right: 10px;
+    border: 5px solid black;
+
 }

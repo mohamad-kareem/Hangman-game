@@ -6,7 +6,7 @@ letters.forEach(letter => {
 
     let span =document.createElement("span");
     let the_letter=document.createTextNode(letter);
-    console.log(the_letter)
+    
     span.appendChild(the_letter);
     span.className=("letter_box");
     letter_block.appendChild(span);
@@ -15,7 +15,28 @@ letters.forEach(letter => {
 const words={
     animal:["lion","tiger","dog","cat"],
     movies:["avatar","inception","RUN","TROY"],
-    series:["peaky blinders","breaking bad","the 100","prison break"]
+    cars:["mercedes","bmw","volvo","nissan"]
 }
-let cate=Object.keys(words);
-console.log(cate)
+let all_cat=Object.keys(words);
+
+let random=Math.floor(Math.random()*all_cat.length)
+let random_cat=all_cat[random]
+let in_cat=words[random_cat]
+let index_in=Math.floor(Math.random()*in_cat.length)
+let random_in_cat=in_cat[index_in]
+console.log(in_cat[index_in])
+document.querySelector(".game-info .category span").innerHTML=random_cat
+
+let letter_guess_input=document.querySelector(".letter-input")
+let input_letters=Array.from(random_in_cat)
+input_letters.forEach(letter=>{
+    let empty_span=document.createElement("span")
+    letter_guess_input.appendChild(empty_span)
+
+})
+
+document.addEventListener("click",(e)=>{
+    if (e.target.className==="letter_box"){
+        e.target.classList.add("clicked");
+    }
+})
