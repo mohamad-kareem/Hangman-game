@@ -64,6 +64,21 @@ if(thestatus!==true){
     wrong_attempts++;
     Sketch.classList.add(`wrong-${wrong_attempts}`);
 }
+if(wrong_attempts==7){
+    endGame()
+
+}
 
     }
+
+    
 })
+function endGame() {
+
+    let div = document.createElement("div");
+    let divText = document.createTextNode(`Game Over, The Word Is ${random_in_cat}`);
+    div.appendChild(divText);
+    div.className = 'you_lose';
+    document.body.appendChild(div);
+  
+  }

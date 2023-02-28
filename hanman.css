@@ -229,5 +229,9 @@ padding: 10px;
  .hangman-sketch.wrong-7 .legs:after{
     display: block;
  } 
+ .you_lose{
+    font-size: 60px;
+    color: red;
+ }
 
  
