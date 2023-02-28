@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    margin: 25px;
+    width: 1000px;
+}
+.row{
+    display: flex;
+}
+hr{
+    border: 2px solid black;
+}
+.game-info{
+    display: flex;
+}
+.game-info .game-name{
+    flex: 1;
+}
+.game-info .category{
+    flex: 1;
+    text-align: right;
+}
+.game-info .category span{
+    text-transform: capitalize;
+    color: blue;
+    font-weight: bold;
+}
+.hangman-sketch{
+    flex: 1;
+    padding:30px;
+    height: 400px;
+}
+.hangman-sketch .sketch{
+    width:70px ;
+    height: 300px;
+    border-bottom:5px solid black;
+    position: relative;
+    margin: auto;
+}
+.hangman-sketch .stand:before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 5px;
+    height: 100%;
+    left:34px;
+
+}
+.hangman-sketch .hang:before{
+    content: "";
+    position: absolute;
+    height: 5px;
+    background-color: black;
+    width: 100px;
+    left: 35px;
+    
+}
+
+.hangman-sketch .hang:after{
+    content: "";
+    position: absolute;
+    height: 30px;
+    background-color: black;
+    width:45px;
+    left: 102px;
+    top: 0px;
+    
+}
+.hangman-sketch .rope{
+    border-style: dashed ;
+    border-color: brown;
+    position: absolute;
+    width: 70px;
+    border-radius: 50%;
+    height: 50px;
+    top: 30px;
+    left: 91px;
+}
+.hangman-sketch .man .head{
+    border-radius: 50%;
+    position: absolute;
+    background-color: black;
+    width: 40px;
+    left: 105px;
+    height: 35px;
+    top:38px;
+
+}
+.hangman-sketch .man .neck{
+    position: absolute;
+    background-color: black;
+    width: 10px;
+    left: 121px;
+    height: 40px;
+    top:70px;
+
+}
+.hangman-sketch .man .body{
+    position: absolute;
+    background-color: black;
+    width: 40px;
+    left: 108px;
+    height: 85px;
+    top:91px;
+
+}
+
+.hangman-sketch .man .hands:before  {
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 12px;
+    left: 85px;
+    height: 70px;
+    top:99px;
+    transform: rotate(36deg);
+
+}
+
+.hangman-sketch .man .hands:after  {
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 12px;
+    left: 159px;
+    height: 70px;
+    top:99px;
+    transform: rotate(-36deg);
+
+}
+
+.hangman-sketch .man .legs:before  {
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 12px;
+    left: 112px;
+    height: 77px;
+    top:175px;
+    
+
+}
+
+.hangman-sketch .man .legs:after  {
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 12px;
+    left: 132px;
+    height: 77px;
+    top:175px;
+
+}
+.letters{
+    flex: 1;
+    text-align: center;
+    padding: 65px;
+
+}
+.letters .letter_box{
+display: inline-block;
+font-size: 30px;
+background-color: brown;
+line-height: 55pxpx;
+font-weight: bold;
+width: 55px;
+height: 55px;
+text-transform: uppercase;
+font-weight: bold;
+margin-right: 10px;
+margin-bottom: 10px;
+padding: 10px;
+}
